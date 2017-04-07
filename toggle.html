@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="toggleModule">
+<head>
+	<meta charset="UTF-8">
+	<title>toggle</title>
+	<script src="lib/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="toggleCtrl">
+		<button ng-click="toggleMenu()">Toggle Menu</button>
+		<ul ng-show="menuState.show">
+			<li>阿里山的风景</li>
+			<li>漠河的风景</li>
+			<li>地理的风景</li>
+		</ul>
+	</div>
+
+
+	<script>
+	var toggleModule = angular.module('toggleModule',[]);
+	toggleModule.controller('toggleCtrl',['$scope',function  ($scope) {
+		$scope.menuState = {show:false};
+		$scope.toggleMenu = function  () {
+			$scope.menuState.show = !$scope.menuState.show;
+		}
+	}])
+	</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+[
+	{"id":1, "username":"xiaoming", "password":"abcdef", "phone":"13100110011", "level":"超级管理员"},
+	{"id":2, "username":"test", "password":"test", "phone":"13100110022", "level":"普通管理员"},
+	{"id":3, "username":"angular", "password":"abcdef", "phone":"13100110033", "level":"普通会员"}
+]
